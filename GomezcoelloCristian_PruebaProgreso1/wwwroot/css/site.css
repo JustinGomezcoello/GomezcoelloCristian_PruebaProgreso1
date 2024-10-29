@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+
 }
 
 img {
@@ -27,4 +28,8 @@ img {
     height:300px;
     width:300px;
 
+}
+
+.fondo {
+    background-color:darkgrey;
 }
