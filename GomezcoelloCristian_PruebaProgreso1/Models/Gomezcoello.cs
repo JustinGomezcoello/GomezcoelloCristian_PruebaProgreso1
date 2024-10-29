@@ -12,7 +12,8 @@ namespace GomezcoelloCristian_PruebaProgreso1.Models
         [StringLength(50)]
         public string Nombre { get; set; }
         [Range(0, 95)]
-        public double Edad { get; set; }
+        public int Edad { get; set; }
+        
         [Required]
         public int Hermanos { get; set; }
 
@@ -21,8 +22,9 @@ namespace GomezcoelloCristian_PruebaProgreso1.Models
         public string Direccion { get; set; }
         [NotNull]
         public Boolean Quiteno { get; set; }
-        public DateTime? DireccionDate { get; set; }
+        public DateTime? Fecha { get; set; }
 
+        public Double Salario { get; set; }
         public Celular? Celular { get; set; }
         [ForeignKey("Celular")]
         public int IdCelular { get; set; }

@@ -57,7 +57,7 @@ namespace GomezcoelloCristian_PruebaProgreso1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Hermanos,Direccion,Quiteno,DireccionDate,IdCelular")] Gomezcoello gomezcoello)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Hermanos,Direccion,Quiteno,Fecha,Salario,IdCelular")] Gomezcoello gomezcoello)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace GomezcoelloCristian_PruebaProgreso1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Hermanos,Direccion,Quiteno,DireccionDate,IdCelular")] Gomezcoello gomezcoello)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Hermanos,Direccion,Quiteno,Fecha,Salario,IdCelular")] Gomezcoello gomezcoello)
         {
             if (id != gomezcoello.Id)
             {
