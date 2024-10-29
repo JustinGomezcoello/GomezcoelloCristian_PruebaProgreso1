@@ -20,3 +20,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+img {
+    
+    position:center;
+    height:300px;
+    width:300px;
+
+}
